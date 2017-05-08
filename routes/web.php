@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +14,4 @@ Route::get('/', function () {
     return view('viewer');
 });
 Route::get('build/{build_id}', 'ArtifactsController@locateBuild');
-Route::get('build/{$build_id}/job/{$job_id}', 'ArtifactsController@locateJob');
+Route::get('build/{build_id}/job/{job_id}', 'ArtifactsController@locateJob');
