@@ -76,7 +76,7 @@
                 @if (empty($artifacts))
                     <div class="error">There are no artifacts for this build.</div>
                 @else
-                    @if (count($jobs_list) === 1)
+                    @if (count($jobs_list) <= 1)
                         @foreach ($artifacts as $artifact_items)
                             @foreach ($artifact_items as $artifact)
                                 <div>{!! $artifact !!}</div>
