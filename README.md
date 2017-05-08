@@ -10,13 +10,13 @@ Set things up via composer:
 composer install --no-dev
 ```
 
+Copy `.env.example` to `.env` and add values for the various configuration keys (the `APP_KEY`) is added in the next step.
+
 Generate an app key:
 
 ```bash
 php artisan key:generate
 ```
-
-Copy `.env.example` to `.env` and add your generated `APP_KEY` there as well as values for the other items.
 
 Make sure you have the value for `APP_URL` setup on your webserver and pointing to `/public/index.php`.
 
