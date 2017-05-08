@@ -29,7 +29,7 @@ class ArtifactsController extends Controller
 
     public function __construct(TravisApi $travis)
     {
-        $this->prefix = 'artifacts/ee-codeception/';
+        $this->prefix = env('AWS_ARTIFACT_PREFIX');
         $this->storage = Storage::disk('s3');
         $this->travis = $travis;
     }
